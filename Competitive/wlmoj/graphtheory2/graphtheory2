@@ -1,0 +1,12 @@
+import java.io.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        long x = input.nextLong();
+        long y = input.nextLong();
+        if (x <= y) System.out.println("Scam!");
+        else System.out.println("Graph Theory!");
+    }
+}
