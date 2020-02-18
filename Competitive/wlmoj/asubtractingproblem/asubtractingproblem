@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+
+public class Main {
+    static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+    static StringTokenizer st;
+    static String next() throws IOException {
+        while (st == null || !st.hasMoreTokens()) {
+            st = new StringTokenizer(in.readLine().trim());
+        }
+        return st.nextToken();
+    }
+    static int nextInt() throws IOException {
+        return Integer.parseInt(next());
+    }
+    public static void main(String[] args) throws IOException {
+        int query = nextInt();
+        int a;
+        int b;
+        int c;
+        for (int i = 1; i <= query; i++) {
+            a = nextInt();
+            b = nextInt();
+            if (a < b) {
+                c = a - b;
+                System.out.println(c);
+            }
+            else {
+                c = b - a;
+                System.out.println(c);
+            }
+        }    
+    }
+}
